@@ -30,6 +30,17 @@ description: Git Commands Visualized
 
 **จุดด้อย** Release product ได้ช้า เพราะโค้ดต้องถูกตรวจสอบหลายขั้นตอน
 
+และนี่คือตาราง Branch ประเภทต่างๆที่น้องๆต้องพบเจอ
+
+| Branch        | วิธีใช้                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------- |
+| main / master | Branch ที่เก็บ source code เวอร์ชั่นหลัก                                                 |
+| develop       | Branch ที่ developer เอาโค้ดมารวมกัน โดยโค้ดจะล่าสุดกว่า main                            |
+| feature/\*\*  | Branch ที่ developer พัฒนา feature แยกของใครของมัน                                       |
+| bugfix/\*\*   | Branch ที่แก้ไข bug ที่โค้ดอยู่ใน main หรือ develop branch                               |
+| hotfix/\*\*   | Branch ที่แก้ไข bug เร่งด่วน ที่อยู่บน production แก้แล้วต้องรีบเอาขึ้น production ทันที |
+| release/\*\*  | Branch ที่เก็บ source code ที่ขึ้นบน production                                          |
+
 ## Github
 
 คือ Git website ที่สามารถเข้าถึงและอัพโหลดข้อมูลผ่านทางเว็บ [**Github**](https://github.com/) ได้เลย โดยตัวเว็บมีส่วนประกอบดังนี้
