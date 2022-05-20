@@ -20,6 +20,7 @@
   * [Web Application](week-1/web-application.md)
 * [VSCode](vscode.md)
 * [Version Control wit Git](version-control-wit-git.md)
+* [Debugging](debugging.md)
 * [🧡 Week 2](week-2.md)
 * [💛 Week 3](week-3.md)
 * [💚 Week 4](week-4.md)
