@@ -16,5 +16,7 @@
 * [EP6. NodeJS + API + TypeScript](ep6-nodejs-api-typescript.md)
 * [EP7. Workshop with Authentication](ep7.-workshop-with-authentication.md)
 * [❤ Week 1](week-1/README.md)
+  * [Agile](week-1/agile.md)
   * [Web Application](week-1/web-application.md)
+* [VSCode](vscode.md)
 * [🧡 Week 2](week-2.md)

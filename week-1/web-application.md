@@ -4,7 +4,7 @@
 
 ...
 
-## โครงสร้างความรู้ที่ใช้ทำ Web App
+## โครงสร้างความรู้ที่ใช้ทำ WebApp
 
 {% embed url="https://codepen.io/panasun/embed/RwxPXEj" %}
 
