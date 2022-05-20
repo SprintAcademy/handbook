@@ -41,21 +41,49 @@ description: Git Commands Visualized
 | hotfix/\*\*   | Branch ที่แก้ไข bug เร่งด่วน ที่อยู่บน production แก้แล้วต้องรีบเอาขึ้น production ทันที |
 | release/\*\*  | Branch ที่เก็บ source code ที่ขึ้นบน production                                          |
 
+## Development Environment
+
+คือ สภาพแวดล้อมในการพัฒนาซอฟต์แวร์ในแต่ละขั้น โดยจะสอดคล้องกับ Branching model ของ Git โดยแต่ละ Branch จะมี Environment ที่แตกต่างกัน เช่น Feature branch จะมี Environment แบบ Develop Environment และ Main branch จะมี Environment แบบ Production Environment
+
+Environment แบบต่างๆ มีดังนี้
+
+| Environment                                    | รูปแบบการใช้งาน                                                                         |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------- |
+| prod, production                               | Environment จริงที่เอาโค้ดขึ้นให้ user ใช้งาน                                           |
+| preprod, uat (User acceptance test)            | สำหรับทดสอบโค้ด และ Infrastructure ที่คล้ายกับบน Production                             |
+| rc (Release candidate), qa (Quality assurance) | สำหรับให้ Tester snapshot โค้ดสำหรับทดสอบหลายๆ ฟีเจอร์สพร้อมกัน มักใช้ร่วมกับการติด Tag |
+| dev, development                               | ไว้ใช้สำหรับโค้ดที่อยู่ใน branch develop, main หรือ master                              |
+| test                                           | ไว้ใช้สำหรับทดสอบ branch ที่เปิด Pull Request ก่อน merge เข้า branch หลัก               |
+| poc (Proof of concept)                         | ไว้ใช้สำหรับ POC โค้ด มักใช้ร่วมกับ branch poc/\*\*                                     |
+
 ## Github
 
 คือ Git website ที่สามารถเข้าถึงและอัพโหลดข้อมูลผ่านทางเว็บ [**Github**](https://github.com/) ได้เลย โดยตัวเว็บมีส่วนประกอบดังนี้
 
 ![หน้าตาเว็บไซต์ Github](<.gitbook/assets/Screen Shot 2565-05-20 at 15.12.24.png>)
 
-| ส่วนประกอบ        | ความหมาย                                                           |   |   |   |
-| ----------------- | ------------------------------------------------------------------ | - | - | - |
-| repository        | ชื่อโปรเจ็ค                                                        |   |   |   |
-| clone             | ดาวน์โหลด source code จาก git server มาไว้ที่เครื่องตัวเอง (local) |   |   |   |
-| commit            | จุดเซฟ                                                             |   |   |   |
-| commit message    | ข้อความอธิบายจุดเซฟ                                                |   |   |   |
-| push              | การเอาโค้ดจากจุดเซฟอัพโหลดขึ้น git server                          |   |   |   |
-| branch            | การแยกโค้ดจากจุดๆ นึง มาทำต่อ โดยที่แก้ไขแล้วไม่กระทบกับโค้ดหลัก   |   |   |   |
-| pull              | การอัพเดทโค้ดที่อยู่ในเครื่องตัวเอง กับโค้ดใน git server           |   |   |   |
-| pull request (PR) | การขออนุมัติรวมโค้ดจาก branch ที่ทำกับโค้ดใน branch หลัก           |   |   |   |
-| merge             | การอนุมัติการรวมโค้ดเข้าสู่ branch หลัก                            |   |   |   |
-| conflict          | โค้ดในเครื่องตัวเองกับโค้ดใน git server ไม่ตรงกัน                  |   |   |   |
+| ส่วนประกอบ        | ความหมาย                                                                                                                                                      |   |   |   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | - | - | - |
+| repository        | ชื่อโปรเจ็ค                                                                                                                                                   |   |   |   |
+| clone             | ดาวน์โหลด source code จาก git server มาไว้ที่เครื่องตัวเอง (local)                                                                                            |   |   |   |
+| commit            | จุดเซฟ                                                                                                                                                        |   |   |   |
+| commit message    | ข้อความอธิบายจุดเซฟ                                                                                                                                           |   |   |   |
+| push              | การเอาโค้ดจากจุดเซฟอัพโหลดขึ้น git server                                                                                                                     |   |   |   |
+| branch            | การแยกโค้ดจากจุดๆ นึง มาทำต่อ โดยที่แก้ไขแล้วไม่กระทบกับโค้ดหลัก                                                                                              |   |   |   |
+| pull              | การอัพเดทโค้ดที่อยู่ในเครื่องตัวเอง กับโค้ดใน git server                                                                                                      |   |   |   |
+| pull request (PR) | การขออนุมัติรวมโค้ดจาก branch ที่ทำกับโค้ดใน branch หลัก                                                                                                      |   |   |   |
+| merge             | การอนุมัติการรวมโค้ดเข้าสู่ branch หลัก                                                                                                                       |   |   |   |
+| conflict          | เมื่อเราเขียนโค้ดร่วมกันหลายๆ คน อาจมีการแก้ไขโค้ดที่ต่างกันในจุดเดียวกัน เมื่อเอาโค้ดมา merge รวมกัน ดังนั้นจึงเกิด conflict ซึ่งเราต้องเลือกว่าจะใช้โค้ดไหน |   |   |   |
+
+## Git Command
+
+| Command      | Examples                                             | วิธีใช้                                                                                                 |
+| ------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| git clone    | git clone git@github.com:soAcademy/food-menu-app.git | ดาวน์โหลดโปรเจ็คจาก git server ลงเครื่องตัวเอง                                                          |
+| git checkout | git checkout -b feature/sp01-test-git                | สร้าง branch ใหม่ จาก branch หลักที่อยู่                                                                |
+| git status   | git status                                           | แสดงรายชื่อและสถานะไฟล์ที่อยู่ใน commit                                                                 |
+| git add      | git add . git add file1.js file2.js                  | เพิ่มทุกไฟล์ลงใน commit เพิ่มเฉพาะไฟล์ที่ระบุใน commit                                                  |
+| git commit   | git commit -m “add new feature”                      | กำหนดชื่อของ commit ที่จะอัพโหลด                                                                        |
+| git push     | git push -u origin feature/sp01-test-git git push    | อัพโหลดโค้ดใน commit ใช้ตอนสร้าง branch ใหม่ อัพโหลดโค้ดใน commit ใช้ตอนเคยอัพโหลดไปแล้ว                |
+| git pull     | git pull git pull origin main                        | ดึงโค้ดล่าสุดจาก git server มายัง branch ปัจจุบัน ดึงโค้ดล่าสุดจาก branch main มารวมกับ branch ปัจจุบัน |
+| git branch   | git branch git branch -D feature/sp01-temp           | แสดงรายชื่อ branch ทั้งหมดในเครื่องตัวเอง ลบ branch feature/sp01-temp จากในเครื่องตัวเองทิ้ง            |
