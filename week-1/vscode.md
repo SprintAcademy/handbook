@@ -10,13 +10,13 @@ description: Introduction to VSCode
 
 และนี่คือหน้าตาและส่วนประกอบคร่าวๆของ VSCode ครับ
 
-![](<.gitbook/assets/Screen Shot 2565-05-20 at 14.20.49.png>)
+![](<../.gitbook/assets/Screen Shot 2565-05-20 at 14.20.49.png>)
 
 ## Terminal คืออะไร
 
 Terminal คือโปรแกรมที่ช่วยให้เราสามารถคุยกับคอมพิวเตอร์ตรงๆ ผ่านการพิมพ์คำสั่ง Command โดยไม่ต้องผ่าน User Interface
 
-![ความแตกต่างระหว่างคุยกับคอมพิวเตอร์โดยตรงผ่าน Terminal และ การเรีกใช้งานคอมผิวเตอร์ผ่านทาง User Interface](<.gitbook/assets/Screen Shot 2565-05-20 at 14.24.01.png>)
+![ความแตกต่างระหว่างคุยกับคอมพิวเตอร์โดยตรงผ่าน Terminal และ การเรีกใช้งานคอมผิวเตอร์ผ่านทาง User Interface](<../.gitbook/assets/Screen Shot 2565-05-20 at 14.24.01.png>)
 
 ## Basic Terminal Command
 
