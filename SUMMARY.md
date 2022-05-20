@@ -5,7 +5,7 @@
   * [แนะนำทีมงาน](ep0-welcome-new-joner/teams.md)
   * [การเรียนแบบ Sprint](ep0-welcome-new-joner/how-to-learn.md)
   * [ลงโปรแกรม](ep0-welcome-new-joner/ep0-installation.md)
-* [EP1. สร้าง WebApp หนึ่งตัวต้องรู้อะไรบ้าง](ep1-what-should-i-know/README.md)
+* [EP1. สร้าง Web Application หนึ่งตัวต้องรู้อะไรบ้าง](ep1-what-should-i-know/README.md)
   * [โครงสร้างความรู้](ep1-what-should-i-know/webapp-knowledge-graph.md)
 * [EP2. HTML, CSS, JavaScript](ep2-html-css-javascript.md)
 * [EP3. Workshop BMI Calculator](ep3-workshop-bmi-calculator/README.md)
