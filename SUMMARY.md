@@ -19,4 +19,5 @@
   * [Agile](week-1/agile.md)
   * [Web Application](week-1/web-application.md)
 * [VSCode](vscode.md)
+* [Version Control wit Git](version-control-wit-git.md)
 * [🧡 Week 2](week-2.md)
