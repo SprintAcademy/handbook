@@ -6,5 +6,5 @@
 
 และที่สำคัญบริษัทพาร์ทเนอร์ที่พร้อมรับน้องเข้าทำงานทันที่เมื่อผ่านหลักสูตรนี้
 
-* [Siamrajthanee](https://www.siamrajathanee.com/th)
+* [Siamratchathanee](https://www.siamrajathanee.com/th)
 * [True Digital Group](https://www.truedigital.com)
