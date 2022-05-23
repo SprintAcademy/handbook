@@ -21,6 +21,7 @@
   * [VSCode](week-1/vscode.md)
   * [Version Control wit Git](week-1/version-control-wit-git.md)
   * [Debugging](week-1/debugging.md)
+  * [JavaScript](week-1/javascript.md)
 * [🧡 Week 2](week-2.md)
 * [💛 Week 3](week-3.md)
 * [💚 Week 4](week-4.md)
